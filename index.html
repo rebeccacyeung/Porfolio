@@ -8,86 +8,119 @@
   </head>
 
   <body>
-
-    <!-- NAVBAR -->
-    <header class="site-header">
-        <div class="nav-left">
-            <a href="index.html">Rebecca Yeung</a>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">Rebecca Yeung</div>
+                <ul class="nav-links">
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                </ul>
+            </nav>
         </div>
-
-        <nav class="nav-right"> 
-            <a href="index.html#work">Work</a>
-            <a href="public/pages/about.html">About</a>
-            <a href="public/assets/resume.pdf">Resume</a>
-        </nav>
     </header>
 
-     <!-- PAGE CONTENT WRAPPER -->
-    <main class="page-content">
-
-      <!-- HERO SECTION -->
-      <section class="hero">
-        <p class="intro">Hi, I'm Rebecca!</p>
-
-        <h1>
-            UX designer, passionate about going 
-            <span class="highlight">beyond design</span> 
-            and into <span class="highlight">experience.</span>
-         </h1>
-
-        <p class="work-direction">
-          <a href="index.html#work">Check out my work</a>
-        </p>
-      </section>
-
-      <!-- PROJECT SECTION -->
-      <section id="work">
-        <a href="public/pages/revisiondojo.html" class="project-link">
-          <div class="project-card">
-
-            <div class="project-image">
-              <img
-                src="public/assets/searchbar-modal.png"
-                width="610"
-                height="370"
-                alt="Case Study: RevisionDojo"/>
-            </div>
-
-             <div class="project-info">
-              <div class="project-header">
-                <h2 class="project-title">RevisionDojo</h2>
-
-                <div class="project-tags">
-                  <div class="tag">Client Porject</div>
-                  <div class="tag">2025</div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="greeting">
+                    <h1>Hi, I'm Rebecca!</h1>
+                    <svg class="flower-icon" width="53" height="53" viewBox="0 0 53 53" fill="none">
+                        <g>
+                            <path d="M31.8999 0.0129055L10.5709 0.00424398C4.73279 0.00187318 0.00197711 4.73267 0.00434307 10.5708L0.0120116 29.4932C0.0143775 35.3313 4.74903 40.0659 10.5871 40.0683L31.9162 40.077C37.7543 40.0793 42.4851 35.3485 42.4827 29.5104L42.4751 10.588C42.4727 4.74993 37.738 0.0152763 31.8999 0.0129055Z" fill="#FF6A00"/>
+                            <path d="M26.4111 0.488033C28.097 0.471871 29.4589 1.84391 29.3498 3.52612C28.4842 16.8668 22.823 29.4867 13.3546 39.0212C3.88623 48.5557 -8.69403 54.3045 -22.0284 55.2629C-23.7099 55.3767 -25.0809 54.0144 -25.0632 52.3288V52.3288C-25.0455 50.6432 -23.6679 49.2832 -21.9817 49.1609C-10.2393 48.2366 1.82518 43.1372 10.1722 34.7319C18.5192 26.3267 23.5415 15.227 24.3841 3.47842C24.5047 1.79691 25.8748 0.454194 27.5606 0.470356V0.470356C29.2464 0.48652 30.606 1.85645 30.5172 3.53991C29.5799 14.9632 24.6905 25.7415 16.6395 33.9882C8.58854 42.2349 -2.06926 47.3816 -13.4668 48.5929C-15.1432 48.7711 -16.4503 47.3553 -16.376 45.671V45.671C-16.3017 43.9868 -14.93 42.6337 -13.2444 42.4445C-1.83702 41.2657 8.82079 36.1481 16.8717 28.0012C24.9227 19.8543 29.812 9.10564 30.7794 -2.31842C30.9192 -4.00293 32.325 -5.31827 34.0108 -5.30211V-5.30211C35.6966 -5.28595 37.0562 -3.91602 36.9674 -2.23256C36 13.2095 28.7425 27.6589 17.139 38.8851C5.5355 50.1113 -9.32287 56.9844 -24.8074 58.0016C-26.4912 58.0888 -27.8771 56.7407 -27.8532 55.0557V55.0557C-27.8293 53.3707 -26.4461 52.0282 -24.7617 51.9502C-10.0194 51.1025 4.01823 44.6294 14.8652 33.9862C25.7122 23.343 32.2853 9.47474 33.2826 -5.27756C33.4024 -6.96203 34.8082 -8.27737 36.494 -8.26121V-8.26121" fill="#FF904B"/>
+                            <circle cx="27.6242" cy="26.3199" r="6.76098" fill="#FF904B"/>
+                        </g>
+                    </svg>
                 </div>
-              </div>
+                
+                <h2 class="tagline">
+                    UX designer passionate<br>about going <span class="highlight">beyond design</span><br>and into <span class="highlight">experience</span>.
+                </h2>
 
-                <p class="project-description">
-                  Created a feature to help IB students surface the right content at the right time.
-                </p>
+                <div class="cta">
+                    <span>Check out my work</span>
+                    <svg width="19" height="15" viewBox="0 0 21 15" fill="none">
+                        <path d="M1 6.36396C0.447715 6.36396 0 6.81168 0 7.36396C0 7.91625 0.447715 8.36396 1 8.36396V7.36396V6.36396ZM20.7071 8.07107C21.0976 7.68054 21.0976 7.04738 20.7071 6.65685L14.3431 0.292893C13.9526 -0.097631 13.3195 -0.097631 12.9289 0.292893C12.5384 0.683418 12.5384 1.31658 12.9289 1.70711L18.5858 7.36396L12.9289 13.0208C12.5384 13.4113 12.5384 14.0445 12.9289 14.435C13.3195 14.8256 13.9526 14.8256 14.3431 14.435L20.7071 8.07107ZM1 7.36396V8.36396H20V7.36396V6.36396H1V7.36396Z" fill="black"/>
+                    </svg>
+                </div>
             </div>
-          </div>
-        </a>
-      </section>
-
-      <!-- FOOTER -->
-      <footer class="site-footer page-content">
-        <div class="footer-left">
-          <p class="footer-heading">Glad we crossed paths</p>
-          <p class="footer-subheading">Hope it left you with a bit of curiosity and inspiration</p>
         </div>
+    </section>
 
-        <div class="footer-right">
-          <a href="https://linkedin.com/in/rebecca-yeung-" target="_blank">LinkedIn</a>
-          <a href="public/assets/resume.pdf" target="_blank">Resume</a>
-          <a href="mailto:rcy3@sfu.ca">Email</a>
+    <!-- Projects Section -->
+    <section class="projects" id="work">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Project 1: RevisionDojo -->
+                <article class="project-card">
+                    <div class="project-image purple-bg">
+                        <img src="https://images.unsplash.com/photo-1699040309386-11c615ed64d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwdXJwbGUlMjBpbnRlcmZhY2UlMjBkZXNpZ24lMjBtb2NrdXB8ZW58MXx8fHwxNzY5NzMzODUzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="RevisionDojo interface">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>RevisionDojo</h3>
+                            <span class="project-meta">Client Project · 2025</span>
+                        </div>
+                        <p class="project-description">Created an omni-directional search bar modal to help service users anywhere on the app.</p>
+                    </div>
+                </article>
+
+                <!-- Project 2: Strava Feature Design -->
+                <article class="project-card">
+                    <div class="project-image orange-bg">
+                        <img src="https://images.unsplash.com/photo-1728026462595-ae9e5884d612?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaXRuZXNzJTIwYXBwJTIwc2NyZWVucyUyMG9yYW5nZXxlbnwxfHx8fDE3Njk3MzM4NTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Strava workout interface">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Strava Feature Design</h3>
+                            <span class="project-meta">Concept · 2025</span>
+                        </div>
+                        <p class="project-description">Created a workout builder feature to make planning workouts fully accessible in one app.</p>
+                    </div>
+                </article>
+
+                <!-- Project 3: NellaDerm Rebrand -->
+                <article class="project-card">
+                    <div class="project-image blue-bg">
+                        <img src="https://images.unsplash.com/photo-1626253934161-08cfea22e968?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9kdWN0JTIwcGFja2FnaW5nJTIwZGVzaWdufGVufDF8fHx8MTc2OTYxMTEyMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="NellaDerm product packaging">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>NellaDerm Rebrand</h3>
+                            <span class="project-meta">Enterprise · 2020</span>
+                        </div>
+                        <p class="project-description">Rebranded an eczema care brand to better align with the company values.</p>
+                    </div>
+                </article>
+            </div>
         </div>
-      </footer>
+    </section>
 
-    </main>
-  </body>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-icons">
+                    <!-- LinkedIn Icon -->
+                    <a href="#" aria-label="LinkedIn" class="social-icon">
+                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none">
+                            <path d="M33.7489 7.75V25.25C33.7489 26.2446 33.3842 27.1984 32.735 27.9017C32.0859 28.6049 31.2054 29 30.2874 29H7.21044C6.29238 29 5.41193 28.6049 4.76276 27.9017C4.1136 27.1984 3.7489 26.2446 3.7489 25.25V7.75M33.7489 7.75C33.7489 6.75544 33.3842 5.80161 32.735 5.09835C32.0859 4.39509 31.2054 4 30.2874 4H7.21044C6.29238 4 5.41193 4.39509 4.76276 5.09835C4.1136 5.80161 3.7489 6.75544 3.7489 7.75M33.7489 7.75V8.155C33.749 8.79524 33.5977 9.42484 33.3096 9.98383C33.0214 10.5428 32.6059 11.0126 32.1027 11.3483L20.5643 19.04C20.0184 19.4042 19.39 19.5971 18.7489 19.5971C18.1078 19.5971 17.4794 19.4042 16.9335 19.04L5.39505 11.35C4.89186 11.0142 4.47639 10.5445 4.18824 9.98549C3.90008 9.42651 3.74884 8.79691 3.7489 8.15667V7.75" stroke="black" stroke-width="2.20305" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <!-- Email Icon -->
+                    <a href="#" aria-label="Email" class="social-icon">
+                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none">
+                            <path d="M0 0V2.12413C0.419425 1.94423 0.692172 1.52573 0.692172 1.06207C0.692172 0.598403 0.419425 0.179901 0 0" fill="black"/>
+                        </svg>
+                    </a>
+                </div>
+                <p class="footer-text">Design and coded by me using HTML and CSS!</p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
-
-
-
